@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/chap05_ex/Ex5_1" method="post">
-		名前：<br>
-		<input type="text" name="name"><br>
-		<input type="submit" value="登録">
-	</form>
+<form action="/chap07_request_scope/human" method="post">
+	名前<input type="text" name="name">
+	年齢<input type="number" name="age">
+	<input type="submit" value="送信">
+</form>
 </body>
 </html>

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="model.Human" %>
+<% Human h = (Human) request.getAttribute("human"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/chap05_ex/Ex5_1" method="post">
-		名前：<br>
-		<input type="text" name="name"><br>
-		<input type="submit" value="登録">
-	</form>
+	<%= h.getName() %>さんは、<%= h.getAge() %>歳です。
 </body>
 </html>

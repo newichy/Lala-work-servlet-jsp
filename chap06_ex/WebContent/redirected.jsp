@@ -7,10 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/chap05_ex/Ex5_1" method="post">
-		名前：<br>
-		<input type="text" name="name"><br>
-		<input type="submit" value="登録">
-	</form>
+	<h1>リダイレクト</h1>
+	<a href="/chap06_ex/Ex6_2">戻る</a>
 </body>
 </html>
