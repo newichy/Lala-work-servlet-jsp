@@ -6,6 +6,7 @@
 <% 
 	User loginUser = (User) session.getAttribute("loginUser");
 	List<Mutter> mutterList = (List<Mutter>) application.getAttribute("mutterList");
+	String errorMsg = (String) request.getAttribute("errorMsg");
 %>
 <!DOCTYPE html>
 <html>
@@ -24,6 +25,9 @@
 		<input type="text" name="text">
 		<input type="submit" value="つぶやく">
 	</form>
+	<% if(errorMsg != null){ %>
+		<P style="color:red;"><%= errorMsg %></P>
+	<% } %>
 	<% for(Mutter mutter : mutterList){ %>
 		<P><%= mutter.getUserName() %>:<%= mutter.getText() %></P>
 	<% } %>
