@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <%@ page import="model.User" %>
 <%@ page import="model.Mutter" %>
 <%@ page import="java.util.List" %>
@@ -8,6 +9,8 @@
 	List<Mutter> mutterList = (List<Mutter>) application.getAttribute("mutterList");
 	String errorMsg = (String) request.getAttribute("errorMsg");
 %>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,19 +20,21 @@
 <body>
 	<h1>どこつぶメイン</h1>
 	<p>
-		<%= loginUser.getName() %>さん、ログイン中です。
-		<a href="/docoTsubu/Logout">ログアウト</a>
+		<%= loginUser.getName() %>
+		<a href="/docoTsubu_JSTL/Logout">ログアウト</a>
 	</p>
-	<p><a href="/docoTsubu/Main">更新</a></p>
-	<form action="/docoTsubu/Main" method="post">
+	<p><a href="/docoTsubu_JSTL/Main">更新</a></p>
+	<form action="/docoTsubu_JSTL/Main" method="post">
 		<input type="text" name="text">
 		<input type="submit" value="つぶやく">
 	</form>
-	<% if(errorMsg != null){ %>
+	<% if(errorMsg != null){
 		<P style="color:red;"><%= errorMsg %></P>
 	<% } %>
+	
 	<% for(Mutter mutter : mutterList){ %>
 		<P><%= mutter.getUserName() %>:<%= mutter.getText() %></P>
 	<% } %>
+
 </body>
 </html>

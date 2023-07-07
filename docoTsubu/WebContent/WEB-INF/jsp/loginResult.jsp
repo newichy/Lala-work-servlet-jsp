@@ -14,7 +14,7 @@
 	
 		<p>ログインに成功しました</p>
 		<p>ようこそ<%= loginUser.getName() %>さん</p>
-		<a href="/docoTsubu/Main">つぶやき投稿・閲覧へ</a>
+		<a href="/docoTsubu_JSTL/Main">つぶやき投稿・閲覧へ</a>
 	
 	<% } else { %>
 	
