@@ -6,7 +6,7 @@
                 
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
                 
-        <property name="java-output-path" value="/docoTsubu_JSTL/build/classes"/>
+        <property name="java-output-path" value="/docoTsubu/build/classes"/>
         <property name="context-root" value="docoTsubu_JSTL"/>
             
     </wb-module>

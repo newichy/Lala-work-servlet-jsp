@@ -21,10 +21,10 @@
 	<h1>どこつぶメイン</h1>
 	<p>
 		<%= loginUser.getName() %>
-		<a href="/docoTsubu_JSTL/Logout">ログアウト</a>
+		<a href="/docoTsubu/Logout">ログアウト</a>
 	</p>
-	<p><a href="/docoTsubu_JSTL/Main">更新</a></p>
-	<form action="/docoTsubu_JSTL/Main" method="post">
+	<p><a href="/docoTsubu/Main">更新</a></p>
+	<form action="/docoTsubu/Main" method="post">
 		<input type="text" name="text">
 		<input type="submit" value="つぶやく">
 	</form>
